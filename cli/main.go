@@ -33,7 +33,7 @@ func Run(args []string) bool {
 						logger.Println("initiate the database")
 						db, _ := storage.New(DB_FILENAME)
 
-						//ensure there is some data
+						//ensure there is some data OR always create a new DB
 						//if err := db.MustHaveDB(); err != nil {
 						if err := db.InitDB(); err != nil {
 							return errors.Wrap(err, "error checking the DB existence")

@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/alexkaplun/pfy_distributed_workers/storage"
-	"github.com/alexkaplun/pfy_distributed_workers/workers"
+	workers "github.com/alexkaplun/pfy_distributed_workers/workerpool"
 )
 
 var logger = log.New(os.Stdout, "service: ", log.Ldate|log.Ltime|log.Lshortfile)
